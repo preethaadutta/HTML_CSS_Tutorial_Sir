@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition in CSS</title>
+    <style>
+        body{
+            background-color: rgb(230, 52, 81);
+            color:white;
+        }
+        div{
+            background-color: blue;
+            width:200px;
+            height:230px;
+            font-size: 2.5rem;
+            padding: 20px;
+            /**/
+            transition:all 3s;
+        }
+        div:hover{
+            width:450px;
+            font-size: 3rem;
+            height: 300px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div>transition-property</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        /*
+        1)Adjacent Sibling Selector (+)
+        h2+p{
+            color:aqua;
+            background-color: blueviolet;
+        }
+        */
+        /*
+        2)General Sibling Selector (~)
+        div~p{
+            color:aqua;
+            background-color: blueviolet;
+        }
+        */
+        /*
+        3)Child Selector (>)
+        div>p{
+            color:aqua;
+            background-color: blueviolet;
+        }
+        */
+        /*
+        4)Descedant Selector (space)
+        div p{
+            color:aqua;
+            background-color: blueviolet;
+        }
+        */
+    </style>
+</head>
+<body>
+    <!--There are 4 types of css combinators:-
+        1)Adjacent Sibling Selector (+)
+        This selector is used to select an element that is immediately after another specific element.
+        Adjacent=>immediately following
+    
+    <div>
+        <h2>Heading1</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.
+        </p>
+        <h2>Heading2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.
+        </p>
+    </div>
+    -->
+
+    <!--2)General Sibling Selector (~)
+        This selector is used to select all elements that are next siblings of a specified element.
+    
+    <div>
+        <h2>Heading1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.</p>
+        <h2>Heading2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.</p>
+        <h3>heading3</h3>
+        <h2>heading3a</h2>
+        <p>para1</p>
+    </div>
+    <p>para2</p>
+    <p>para3</p>
+    <h3>heading4</h3>
+    <p>para4</p>
+    -->
+
+    <!--3)Child Selector (>)
+        This selector is used to select all elements that are children of a specified element.
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.</p>
+        <section>
+            <p>para3</p>
+        </section>
+        <p>para4</p>
+    </div>
+    <p>para5</p>
+    <p>para6</p>
+    -->
+    <!--4)Descendant Selector ( ) space symbol
+        This selector is used to select all elements that are descendant of a specified element.
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe doloremque necessitatibus, vero dolores earum.</p>
+        <section>
+            <p>para3</p>
+        </section>
+        <p>para4</p>
+    </div>
+    <p>para5</p>
+    <p>para6</p>
+    -->
+</body>
+</html>

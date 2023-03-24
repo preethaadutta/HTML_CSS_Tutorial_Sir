@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .column{
+            width: 25%;
+            padding: 20px;
+            float: left;
+        }
+        @media screen and (max-width:900px){
+            .column{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:650px){
+            .column{
+                width: 100%;
+            }
+        }
+        /*
+        .last{
+            display:none;
+        }
+        */
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column" style="background-color: aqua;">
+            <h2>HTML5</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio maiores officia eos. Vero, harum!
+            </p>
+        </div>
+        <div class="column" style="background-color: rgb(230, 66, 178);">
+            <h2>CSS3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio maiores officia eos. Vero, harum!
+            </p>
+        </div>
+        <div class="column" style="background-color: rgb(66, 56, 214);">
+            <h2>JavaScript</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio maiores officia eos. Vero, harum!
+            </p>
+        </div>
+        <!--<div class="column last" style="background-color: rgb(128, 240, 139);">-->
+        <div class="column" style="background-color: rgb(128, 240, 139);">
+            <h2>React</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio maiores officia eos. Vero, harum!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

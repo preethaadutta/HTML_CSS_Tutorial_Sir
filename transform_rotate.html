@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* */
+        body{
+            background-color: pink;
+            color:white;
+        }
+        .transform-2d{
+            background-color: cornflowerblue;
+            padding: 25px;
+            margin: 15px;
+            width: 200px;
+            transform: rotate(-25deg);
+            transform: translate(40px, 50px) /*same as before*/
+        }
+        .transform-3d{
+            background-color: rgb(219, 59, 193);
+            padding: 25px;
+            margin: 15px;
+            width: 200px;
+            /*
+            transform: perspective(200px) translate3d(20px,90px,50px) 
+            rotateX(40deg) rotateY(30deg) rotateZ(15deg);
+            */
+            transform: perspective(200px) translate3d(20px,90px,50px) 
+            rotate3d(1,1,1,30deg);/*along all the axis rotation*/
+            /*
+            rotate3d(1,0,0,30deg);along Xaxis rotation
+            rotate3d(0,1,0,30deg);along Yaxis rotation
+            rotate3d(0,0,1,30deg);along Zaxis rotation
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="transform-2d">2D transform</div>
+    <div class="transform-3d">3D transform</div>
+</body>
+</html>

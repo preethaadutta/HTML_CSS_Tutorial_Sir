@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element selectors</title>
+    <style>
+        body{
+            background-color: black;
+            font-size: 32px;
+            color:aqua;
+        }
+        p::before{
+            content:"";
+            display: block;
+            height: 5px;
+            background-color: blue;
+        }
+        p::after{
+            content:"";
+            display: block;
+            height: 5px;
+            background-color: rgb(230, 59, 190);
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa voluptatum omnis recusandae nam, tempore suscipit voluptates odit, doloremque nulla eaque. Dignissimos debitis ut minima?
+    </p>
+</body>
+</html>

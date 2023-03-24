@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrix() method</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+        }
+        div{
+            width:300px;
+            font-size:1.5rem;
+            background-color: crimson;
+            border: 1px solid black;
+            margin:20px auto;
+            padding: 25px;
+            text-align: center;
+        }
+        .mydiv1{
+            transform:matrix(1,-0.3,0,1,0,20);
+        }
+        .mydiv2{
+            /*matrix3d(a1,a2,a3,a4,b1,b2,b3,b4,c1,c2,c3,c4,d1,d2,d3,d4); 
+            total 16 parameters:- 
+            1st 12 values are for linear transformation, last 4 values are for describing transform
+            a1- scaleX
+            a2- skewX on Z
+            a3- skewX on Y
+            a4- translateX
+            b1- 
+            rotateX, rotateY,rotateZ*/
+            transform:matrix3d(1,
+            0.1,
+            0,
+            0.001,
+            0,
+            1,0,0.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv1">matrix() method</div>
+    <div class="mydiv2">matrix3d() method</div>
+</body>
+</html>

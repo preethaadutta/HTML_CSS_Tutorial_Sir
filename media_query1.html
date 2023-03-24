@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        Orientation means landscape and potrait
+        print is used to take printout of that page
+        */
+        body{
+            background-color: rgb(225, 62, 89);
+            color:white;
+        }
+        h1{
+            color:dodgerblue;
+            font-size: 3rem;
+        }
+        button{
+            background-color: aqua;
+            border:0;
+            color:white;
+            padding:8px;
+            width: 100px;
+            border-radius: 15px;
+        }
+        /*@media all for all screen size*/
+        @media screen and (max-width:450px){
+            /*max-width:450px means this effect will be applied below 450px screen size*/
+            /*min-width:450px means this effect will be applied above 450px screen size*/
+            body{
+                text-align: center;
+            }
+            h1{
+                color:red;
+                font-size: 2.5rem;
+            }
+            button{
+                background-color: orange;
+                color:white;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        @media screen and (max-width:300px){
+            body{
+                text-align: center;
+            }
+            h1{
+                color:chocolate;
+                font-size: 2rem;
+            }
+            button{
+                background-color: rgb(40, 157, 95);
+                color:white;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        @media screen and (min-width:1200px){
+            body{
+                text-align: center;
+            }
+            h1{
+                color:chocolate;
+                font-size: 2rem;
+            }
+            button{
+                background-color: rgb(40, 157, 95);
+                color:white;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, natus alias? Tempore perferendis illum fugiat velit praesentium vitae corporis similique debitis neque quibusdam dignissimos, fuga sapiente autem pariatur beatae voluptas id cupiditate, tempora hic nihil impedit! Est rerum eos atque aliquam molestias aliquid cum unde!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iure architecto aliquid eaque, laudantium corrupti eum impedit repudiandae? Temporibus ab suscipit natus eaque reiciendis, quidem esse impedit fuga non quibusdam voluptatem, neque eligendi! Distinctio, quisquam.
+    </p>
+    <button type="button">Click here</button>
+</body>
+</html>

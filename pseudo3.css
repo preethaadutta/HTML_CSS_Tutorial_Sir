@@ -1,0 +1,18 @@
+a{
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+}
+/*a:nth-child(3) will take 3rd anchor link for styling*/
+a:nth-child(3){
+    color:rgb(191, 255, 0);
+}
+a:nth-child(5){
+    background-color:rgb(125, 125, 194);
+    color: aqua;
+    width: 250px;
+    padding: 15px;
+}
+h3:nth-of-type(2){
+    color:rgb(189, 62, 157);
+}

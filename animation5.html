@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation fill mode</title>
+    <style>
+        body{
+            background-color: pink;
+            color:white;
+        }
+        .div1{
+            position: relative;
+            width:120px;
+            padding:50px;
+            margin:60px;
+            border:12px solid blue;
+            background-color: coral;
+            animation-name: anim;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+            /*
+            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
+            */
+            animation-fill-mode: both;/*both means forwards and backwards*/
+            animation-fill-mode: none;
+        }
+        @keyframes anim{
+            0%{
+                left:0%;
+                background-color: red;
+            }
+            100%{
+                left: 54%;
+                background-color: rgb(60, 192, 209);
+                transform:rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

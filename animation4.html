@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Direction</title>
+    <style>
+        body{
+            background-color: rgb(201, 52, 77);
+            color:white;
+        }
+        .div1{
+            width:100px;
+            height:100px;
+            margin:100px 50px;
+            border-radius: 50%;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: dodgerblue;
+            /*
+            animation-name: anim1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: initial;
+            animation-direction: reverse;
+            animation-direction: alternate;
+            animation-direction: alternate-reverse;
+            */
+            animation: anim1 3s alternate infinite;
+        }
+        @keyframes anim1{
+            0%{
+                left:0;
+                top:0;
+            }
+            30%{
+                left:120px;
+                top:0;
+            }
+            60%{
+                left:180px;
+                top:-50px;
+            }
+            80%{
+                left:300px;
+                top:0;
+            }
+            90%{
+                left:300px;
+                top:-50px;
+            }
+            100%{
+                left:360px;
+                top:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

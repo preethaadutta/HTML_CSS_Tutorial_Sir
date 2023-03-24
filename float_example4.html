@@ -1,0 +1,42 @@
+<!--Modern way to clear that issue-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        div{
+            border:4px solid green;
+        }
+        img{
+            margin:16px;
+            float:left;
+        }
+        p{
+            padding:16px;
+            float:left;
+        }
+        .clearfix::after{
+            content: "";
+            visibility: hidden;
+            clear:both;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <img src="https://pixabay.com/photos/iceland-arctic-fox-fox-white-1979445/" width="250">
+        <img src="https://pixabay.com/photos/parrot-yellow-macaw-bird-perched-3601194/px" width="250px">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, hic. Laboriosam ea quaerat quas voluptas rerum repudiandae, deserunt assumenda, nisi eos nobis perferendis inventore quod!
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example1</title>
+    <style>
+        body{
+            background-color: pink;
+            color:white;
+        }
+        .slide{
+            background-color: dodgerblue;
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            /*
+            animation-name: slidebox;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            */
+            /*animation: name_of_animation time_duration_of_animation how_many_times;*/
+            animation: slidebox 3s infinite;
+        }
+        /*
+        @keyframes slidebox{
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform: translate(450px) rotate(90deg);
+            }
+        }
+        same*/
+        @keyframes slidebox{
+            0%{
+                transform: translate(0px);
+            }
+            35%{
+                height: 100px;
+                width: 3px;
+            }
+            45%{
+                border-radius: 50%;
+                background-color: chocolate;
+            }
+            100%{
+                transform: translate(450px) rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide"></div>
+</body>
+</html>

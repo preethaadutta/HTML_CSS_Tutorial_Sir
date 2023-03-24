@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{/*--blue is a variable in css*/
+            --blue:#9292f3;
+            --green:#72de8f;
+            --pink:#eda0dd;
+        }
+        body{
+            background-color: var(--blue);
+        }
+        h2{
+            background-color: var(--blue);
+        }
+        p{
+            background-color: var(--blue);
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h2>CSS variables</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat provident obcaecati eum deserunt sed quas.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat provident obcaecati eum deserunt sed quas.
+        </p>
+    </div>
+</body>
+</html>

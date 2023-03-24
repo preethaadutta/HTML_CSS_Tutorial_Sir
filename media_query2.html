@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /**/
+        /*
+        to see output in printing mode press ctrl+p if I've printer then it'll be printed
+        */
+        body{
+            background-color: rgb(8, 8, 8);
+            color:white;
+        }
+        h1{
+            color:rgb(125, 125, 228);
+            font-size: 45px;
+            text-align: center;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        @media print{
+            h1{
+                color:grey;
+                font-size: 45pt; /*pt unit is used for printing*/
+                text-align: center;
+                font-family: "Times New Roman", Times, Arial, sans-serif;
+            }
+            p{
+                font-size: 16pt;
+                font-family: "Times New Roman", Times, Arial, sans-serif;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>@media print</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur amet consequuntur nisi neque temporibus, veniam fugiat, facere ullam ratione magni officia officiis eius a placeat, porro repellat optio minima rem illum cupiditate voluptatibus labore.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad provident ratione veritatis unde impedit!
+        </p>
+    </section>
+</body>
+</html>

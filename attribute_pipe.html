@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute pipe selector(|) or hyphenated</title>
+    <style>
+        body{
+            background-color: green;
+            color: white;
+        }
+
+        [class|="my"]{
+            /*attribute pipe selector will take my part as in mypara word my is present with para word so it'll not take that*/
+            color: orange;
+            font-size: 32px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="my">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, soluta voluptatum? Ipsam magnam consequatur dolorum!
+    </p>
+    <p class="mypara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, soluta voluptatum? Ipsam magnam consequatur dolorum!
+    </p>
+    <p class="my-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, soluta voluptatum? Ipsam magnam consequatur dolorum!
+    </p>
+    
+</body>
+</html>

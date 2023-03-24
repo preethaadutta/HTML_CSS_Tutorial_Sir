@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cyan;
+            color:white;
+        }
+        .container{
+            position: relative;
+            margin-top: 50px;
+            width:250px;
+            height:150px;
+            display: inline-block;
+            text-align: center;
+            margin: 25px;
+            overflow: hidden;
+        }
+        img{
+            position: absolute;
+            width:250px;
+            height:150px;
+            left: 0;
+            background-position: center;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+        .cardTitle{
+            position: absolute;
+            width: 170px;
+            left: 40px;
+            top: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: top 0.4s ease, text-shadow 0.4s linear, color 0.4s ease;
+        }
+        .container:hover .cardTitle{
+            top:0px;
+            color:white;
+            text-shadow: 2px 2px 5px black;
+        }
+        .button{
+            position:absolute;
+            left:80px;
+            bottom:15px;
+            transition: opacity 0.35s ease, transform 0.4s ease;
+            text-shadow: 0px 0px 3px black;
+        }
+        .button a{
+            font-size: 12px;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            border: solid 2px white;
+        }
+        .container:hover .button{
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.pexels.com/photo/beautiful-view-of-moraine-lake-2662116/">
+        <p class="cardTitle">Lorem, ipsum dolor.</p>
+        <div class="button">
+            <a href="#">Explore more</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://www.pexels.com/photo/brown-mountains-2559941/">
+        <p class="cardTitle">Lorem, ipsum dolor.</p>
+        <div class="button">
+            <a href="#">Explore more</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://www.pexels.com/photo/gray-asphalt-road-in-dark-forest-7753054/" alt="">
+        <p class="cardTitle">Lorem, ipsum dolor.</p>
+        <div class="button">
+            <a href="#">Explore more</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://www.pexels.com/photo/green-pine-trees-covered-with-fogs-under-white-sky-during-daytime-167699/" alt="">
+        <p class="cardTitle">Lorem, ipsum dolor.</p>
+        <div class="button">
+            <a href="#">Explore more</a>
+        </div>
+    </div>
+</body>
+</html>

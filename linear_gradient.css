@@ -1,0 +1,19 @@
+body{
+    background-color:black ;
+    color: white;
+    font-size: 18px;
+}
+/*article{
+    padding: 150px;
+    margin: 50px;
+    /*background: linear-gradient(to bottom rgb(215, 86, 108),yellow,rgb(122, 122, 221));*/
+    /*background: linear-gradient(45deg rgb(215, 86, 108) 30%,yellow 20%,rgb(122, 122, 221));
+}*/
+article{
+    padding: 380px;
+    background: linear-gradient(135deg,rgb(231, 121, 121) 30%, transparent 25%),
+    linear-gradient(225deg,rgb(159, 151, 218) 30%, transparent 25%),
+    linear-gradient(315deg,rgb(139, 215, 162) 30%, transparent 25%),
+    linear-gradient(45deg,rgb(212, 238, 134) 30%, transparent 25%);
+    background-color: dodgerblue;
+}

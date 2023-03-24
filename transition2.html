@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition example 2</title>
+    <style>
+        /**/
+        /*
+        Cubic Bezier curve, cubic-beizer property:- 
+        */
+        body{
+            background-color: pink;
+            color:white;
+        }
+        .container{
+            width: 85%;
+            margin: 30px auto 0;
+            border: 3px solid black;
+            border-radius: 60px;
+            padding: 15px;
+            background-color: aqua;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: orange;
+            /*transition-timing-function: ease; */
+            /**/
+            /*transition-timing-function: ease-in;*/
+            /*transition-timing-function: ease-out;*/
+            /*transition-timing-function: ease-in-out;*/
+            /*transition-timing-function: linear;*/
+            /*for linear keyword: transition-timing-function: cubic-bezier(0,0,1,1)*/
+            transition-timing-function: cubic-bezier(0.2,0.9,0.0,1);
+            transition-duration: 1s;
+        }
+        .container:hover .box{
+            margin-left: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Speed curve of Transition using transition-timing-function property</h2>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--Topic:- Attribute Container Value Selector(*)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Container Value Selector(*)</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        a[href*="yah"]{/*as "yah" is available in yahoo so yahoo link will be highlighted*/
+            color: red;
+            font-style: oblique;
+            font-size: 32px;
+        }
+        a[href*="YAH" i]{/*i for ignor uppercase or lowercase as "YAH" is available in yahoo so yahoo link will be highlighted*/
+            color: rgb(19, 146, 163);
+            font-style: oblique;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <a href="bing.com" target="_blank">Bing</a>
+    <a href="yahoo.com" target="_blank">Yahoo</a>
+</body>
+</html>

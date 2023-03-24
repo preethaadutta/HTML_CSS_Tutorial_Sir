@@ -1,0 +1,13 @@
+input:focus{
+    background-color: aqua;
+    color: brown;
+}
+input:read-only{/*here read-only is a paseudo class*/
+background-color: chocolate;
+}
+input:invalid{
+    background-color: blueviolet;
+}
+input:required{
+    background-color: blue;
+}

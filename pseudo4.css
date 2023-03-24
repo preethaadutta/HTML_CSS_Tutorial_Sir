@@ -1,0 +1,28 @@
+p::first-line{ /*:: means pseudo element*/
+    color:red;
+}
+p::first-letter{ /*:: means pseudo element*/
+    color:rgb(50, 173, 64);
+    font-size:32px;
+}
+label::after{ /*:: means pseudo element*/
+    content:"*";
+}
+label::before{ /*:: means pseudo element*/
+    content:"1-";
+}
+p::after{
+    content:"😃";/*emogies will come "windows key"+"." I've to press*/
+}
+::selection{
+    background-color: dodgerblue;
+    color:rgb(197, 120, 170);
+}
+.d1::selection{
+    background-color: rgb(110, 47, 13);
+    color:rgb(102, 174, 15);
+}
+.d2::selection{
+    background-color: rgb(151, 31, 111);
+    color:rgb(71, 41, 136);
+}

@@ -1,0 +1,27 @@
+/*After any html element if : is there then pseudoclass. ex: link, visited, hover*/
+
+/*Link-unvisited*/
+a:link{
+    text-decoration: none;
+    color:rgb(66, 142, 209);
+}
+/*Link-visited*/
+a:visited{
+    text-decoration: none;
+    color:rgb(160, 35, 118);
+}
+/*Hover effect*/
+a:hover{
+    background-color: brown;
+    color: palevioletred;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*simple tooltip hover*/
+/*will not be visible*/
+section h3{
+    display:none;
+}
+section.main-section:hover h3{
+    display: block;
+}
