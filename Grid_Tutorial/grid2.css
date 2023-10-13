@@ -1,0 +1,29 @@
+/*grid container*/
+.grid-container{
+    background-color: blueviolet;
+
+    display: grid;
+
+    /*grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;*/
+    /*grid-template-columns: repeat(4,150px);same as previous lines
+    grid-template-rows: repeat(3,150px);
+    grid-gap: 25px;*/
+
+    /*fr unit(fractional unit). this unit will only work for css grid system and it is used to fill full available space*/
+    grid-template-columns: repeat(4,150px) 1fr;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+    grid-template-columns: 150px 1fr 50% 1fr;
+    height: 600px;
+
+    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,100px) 1fr;
+    grid-template-rows: repeat(2,100px) 0.5fr;
+    grid-gap: 25px;
+}
+
+/*grid items*/
+.item{
+    background-color: rgb(246, 220, 174);
+}

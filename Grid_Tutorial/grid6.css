@@ -1,0 +1,57 @@
+.grid-container{
+    background-color: rgb(251, 144, 125);
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,250px);
+    /*justify-items control alignment of grid items and are working along row wise means horizontally*/
+    /*
+    justify-items:stretch;
+    justify-items:start;
+    justify-items:end;
+    justify-items:center;
+    */
+    /*align-items control alignment of grid items and are working along column wise means vertically*/
+    /*
+    align-items:stretch;
+    align-items:start;
+    align-items:end;
+    align-items:center;
+    */
+    /*place-items property is for shorthand of justify-items and align-items*/
+    place-items:start end;
+    place-items:center;
+    place-items:start center;
+    place-items:center start;
+}
+.item{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.item1{
+    background-color: rgb(92, 29, 148);
+}
+.item2{
+    background-color: rgb(32, 174, 37);
+}
+.item3{
+    background-color: rgb(207, 147, 50);
+}
+.item4{
+    background-color: rgb(255, 0, 208);
+    
+}
+.item5{
+    background-color: rgb(81, 57, 161);
+    
+}
+.item6{
+    background-color: rgb(150, 148, 225);
+}
+.item7{
+    background-color: rgb(66, 80, 80);
+}
+.item8{
+    background-color: rgb(150, 209, 55);
+}

@@ -1,0 +1,51 @@
+.grid-container{
+    background-color: tomato;
+    display: grid;
+    grid-gap: 25px;
+    /*grid template areas:- naming grid items can be referred by grid-template-areas property of the grid container*/
+    grid-template-areas: 
+    "header header header header header header" 
+    "sec-1 sec-1 sec-2 sec-2 sec-3 sec-3"
+    ". sec-4 sec-4 sec-4 sec-4 ."/*. means space*/
+    "sec-5 sec-5 sec-5 sec-6 sec-6 sec-6"
+    "footer footer footer footer footer footer"
+}
+section,header,footer{
+    background-color: pink;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150px;
+    letter-spacing: 3px;
+}
+.header{
+    background-color: aqua;
+    grid-area: header;
+}
+.item1{
+    background-color: blueviolet;
+    grid-area: sec-1;
+}
+.item2{
+    background-color: rgb(224, 233, 61);
+    grid-area: sec-2;
+}
+.item3{
+    background-color: rgb(17, 132, 152);
+    grid-area: sec-3;
+}
+.item4{
+    background-color: rgb(52, 226, 43);
+    grid-area: sec-4;
+}
+.item5{
+    background-color: rgb(247, 94, 33);
+    grid-area: sec-5;
+}
+.item6{
+    background-color: rgb(232, 123, 161);
+    grid-area: sec-6;
+}
+.footer{
+    background-color: rgb(239, 61, 41);
+    grid-area: footer;
+}

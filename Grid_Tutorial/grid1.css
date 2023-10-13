@@ -1,0 +1,63 @@
+/*
+A grid layout consists of a parent element with one or more child elements. 
+Grid container must have display property, which is set to grid, after giving this display 
+*/
+/*grid container*/
+.grid-container{
+    background-color: orange;
+
+    /*initializing a grid layout*/
+    display: grid;
+
+    /*grid container properties*/
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px 250px 5rem;
+
+    /*grid column gap properties*/
+    /*grid-column-gap: 10px;
+    grid-column-gap: 1.5rem;
+    grid-column-gap: 5%;
+    grid-column-gap: 7vw;*/
+
+    /*standard syntax*/
+    /*column-gap: 10px;
+    column-gap: 1.5rem;
+    column-gap: 5%;
+    column-gap: 7vw;*/
+    
+    /*grid row gap properties*/
+    /*grid-row-gap: 10px;
+    grid-row-gap: 1.5rem;
+    grid-row-gap: 5%;
+    grid-row-gap: 7vw;*/
+
+    /*standard syntax*/
+    /*row-gap: 10px;
+    row-gap: 1.5rem;
+    row-gap: 5%;
+    row-gap: 7vw;*/
+
+    /*grid gap property
+    in shorthand property for grid-column-gap and grid-row-gap
+    //grid-column-gap grid-row-gap
+    */
+
+    /*old syntax*/
+    /*
+    //grid-gap: grid-column-gap grid-row-gap;
+    grid-gap: 15px 25px;
+    grid-gap: 10% 15%;
+    grid-gap: 5vh 15vw;
+    grid-gap: 25px 10rem;
+    */
+    /*standard syntax*/
+    gap: 15px 25px;
+    gap: 10% 15%;
+    gap: 5vh 15vw;
+    gap: 25px 10rem;
+    gap: 50px;
+}
+/*grid items*/
+.item{
+    background-color: rgb(246, 220, 174);
+}
