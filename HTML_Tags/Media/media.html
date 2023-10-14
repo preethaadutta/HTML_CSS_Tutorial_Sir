@@ -1,0 +1,50 @@
+<!--
+autoplay attribute is allowed when media elements are in muted format
+In web pages we can add different media elements:-
+1)image:-<img>
+2)video:-<video>
+    Attributes:-
+    1)autoplay:- video will be played automatically after loading the page
+    2)muted:- video will be played in muted 
+    3)loop:- video will be played repeatedly in a loop
+    4)controls:- video controls will be displayed such as play, pause button
+3)audio:-<audio>
+4)another webpage:-<iframe>
+    HTML Iframes are used to display a webpage within a webpage. <iframe> is an inline level tag. 
+    Ex:-using <iframe> tag we can add google map page, youtube video, wikepedia pages inside another webpage
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different media elements</title>
+    <style>
+        img{
+            width:500px;
+            height:600px;
+        }
+        video{
+            width:320px;
+            height:240px;
+        }
+    </style>
+</head>
+<body>
+    <img src="flower.jpg" alt="Rose">
+    <video src="Nature_31377.mp4" autoplay muted loop></video>
+    <video controls>
+        <source src="Nature_31377.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <audio src="song.mp3"></audio>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <!--iframe for google map-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723109.0028528688!2d83.49698698770923!3d24.316914307486627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fa16ff1397e887%3A0x71543a3dc3e7a20a!2sWest%20Bengal!5e0!3m2!1sen!2sin!4v1673263182312!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

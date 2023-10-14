@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex example 1</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 2px solid rgba(0, 0, 0, 0.464);
+        }
+        .flex-item{
+            list-style-type: none;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 12px;
+            width: 122px;
+            height: 122px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="flex-container"><!--here ul is parent tag so in CSS flex ul will be termed as flex container element-->
+        <!--here li is child tag so in CSS flex li will be termed as flex container item-->
+        <li class="flex-item">Child1</li>
+        <li class="flex-item">Child2</li>
+        <li class="flex-item">Child3</li>
+        <li class="flex-item">Child4</li>
+        <li class="flex-item">Child5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+A web page can contain various links that will redirect to 
+other pages or specific part of the same page. These links 
+are known as hyperlinks.
+By default, links will appear as follows in all browsers:-
+An unvisited link is underlined and blue
+A visited link is underlined and purple
+An active link is underlined and red
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:-
+1)_self - Default. Opens the document in the same window/tab as it was clicked
+2)_blank - Opens the document in a new window or tab
+3)_parent - Opens the document in the parent frame
+4)_top - Opens the document in the full body of the window
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks With Attributes</title>
+    <style>
+        /*when hovering on link*/
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        /*before visiting*/
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        /*after visiting*/
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        /*when clicking on link at that moment*/
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.facebook.com/" target="_self">Facebook</a>
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a><!--will open in new window-->
+    <a href="https://www.facebook.com/" target="_parent">Facebook</a>
+    <a href="https://www.facebook.com/" target="_top">Facebook</a>
+</body>
+</html>

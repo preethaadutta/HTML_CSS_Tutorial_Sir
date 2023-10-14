@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between inline, block and inline-block</title>
+    <style>
+        .inline{
+            display: inline;
+            width: 20px;
+            height: 20px;
+            background-color: greenyellow;
+            border: 2px solid rgb(100, 100, 169);
+        }
+        .block{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(54, 113, 54);
+            border: 2px solid rgb(11, 11, 97);
+        }
+        .inline-block{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: skyblue;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>display:inline</h2>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur suscipit earum possimus
+        <span class="inline">
+            HTML5
+        </span> 
+        we can't specify width and height of inline element 
+    </div>
+    <h2>display:block</h2>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur suscipit earum possimus fugiat est fugit, aperiam eveniet  
+        <span class="block">
+            HTML5
+        </span> 
+        animi praesentium illo neque ut eos error repudiandae quae, temporibus enim, corrupti nihil voluptas dolore explicabo deserunt.
+    </div>
+    <h2>display:inline-block</h2>
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur suscipit earum possimus fugiat est fugit, aperiam eveniet 
+        <span class="inline-block">
+            HTML5
+        </span> 
+        we can specify width and height for inline-block elements
+    </div>
+</body>
+</html>

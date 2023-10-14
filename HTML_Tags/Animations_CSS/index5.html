@@ -1,0 +1,64 @@
+<!--have to modify code from w3schools.com
+    The animation-fill-mode property specifies a style for the target element when the animation is not playing (before it starts, after it ends, or both).
+The animation-fill-mode property can have the following values:
+none - Default value. Animation will not apply any styles to the element before or after it is executing
+forwards - The element will retain the style values that is set by the last keyframe (depends on animation-direction and animation-iteration-count)
+backwards - The element will get the style values that is set by the first keyframe (depends on animation-direction), and retain this during the animation-delay period
+both - The animation will follow the rules for both forwards and backwards, extending the animation properties in both directions
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        @keyframes example {
+            from 
+            {
+                background-color: red
+            }
+            to 
+            {
+                background-color: yellow;
+            }
+        }
+        /*
+        @keyframes example {
+            0%   
+            {
+                background-color: red;
+            }
+            25%  
+            {
+                background-color: yellow;
+            }
+            50%  
+            {
+                background-color: blue;
+            }
+            100% 
+            {
+                background-color: green;
+            }
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div></div>
+    <p>
+        <b>Note:</b> 
+        When an animation is finished, it goes back to its original style.
+    </p>
+</body>
+</html>

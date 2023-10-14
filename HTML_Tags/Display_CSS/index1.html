@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property in CSS</title>
+    <style>
+        .block{
+            /*background-color: blueviolet;*/
+            border: 3px solid rgb(224, 51, 80);
+            /*display:block; same*/
+            /*converting from block level to inline*/
+            display:inline;
+        }
+        .inline{
+            /*background-color: rgb(35, 171, 164);*/
+            border: 3px solid rgb(74, 51, 224);
+            /*display:inline; same*/
+            /*converting from inline level to block*/
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">Block element</div>
+    <h1 class="block">Block element</h1>
+    <p class="block">Block element</p>
+    <span class="inline">Inline element</span>
+    <a href="#" class="inline">Inline element</a>
+    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyYWwlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="inline" width="100px">
+</body>
+</html>
