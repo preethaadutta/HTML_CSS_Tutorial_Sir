@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(251, 218, 224);
+    margin: 0;
+}
+body,button,input,textarea{
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+}
+header,footer{
+    background-color: rgb(227, 29, 62);
+    height: 100px;
+}
+footer{
+    background-color: rgb(227, 29, 62);
+    color: black;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.sidebar-right{
+    background-color: rgb(154, 90, 101);
+    color:white;
+}
+h1{
+    color: red;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+@media screen and (min-width:1120px){
+    .content-area{
+        display: flex;
+    }
+    .sidebar-right{
+        flex:0 0 320px;
+    }
+}
+/*Header Styles*/
+.site-header{
+    display: flex;
+    height: 300px;
+    flex-flow: column;
+}
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.site-title{
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Satisfy', cursive;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+}
+.site-description{
+    color: yellow;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    font-style: italic;
+}
+.main-menu{
+    color: black;
+    background-color: rgb(237, 126, 145);
+}
+.main-menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 1em 2em;
+    display: block;
+}
+.main-menu li i{
+    position: absolute;
+}
+.main-menu li a:hover{
+    background-color: black;
+    color: yellow;
+}
+@media screen and (min-width:810px){
+    .main-menu ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .main-menu ul li{
+        flex-grow: 1;
+        flex-basis: auto;
+        flex-shrink: 0;
+    }
+}
+@media screen and (min-width:1120px){
+    .site-title{
+        font-size: 4em;
+    }
+}
+/*post post styles*/
+.main-content-area{
+    padding: 2em;
+}
+.post{
+    background-color: white;
+    margin-bottom: 1em;
+}
+.post a{
+    text-decoration: none;
+    color: black;
+}
+.post-content{
+    padding: 0 40px 20px;
+}
+.post-content h2{
+    background-color: rgb(237, 126, 145);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: 0 -40px 30px;
+}
+@media screen and (min-width:800px) {
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .post{
+        flex-basis: 49%;
+    }
+}
+@media screen and (min-width:1120px) {
+    .post-one-third{
+        flex-basis: 32%;
+    }
+    .post-half{
+        flex-basis: 49%;
+    }
+    .post-full{
+        flex-basis: 100%;
+    }
+}
+/*watch section*/
+.section-header{
+    color: black;
+    font-size: 3em;
+    text-align: center;
+}
+.watch-card{
+    margin-bottom: 1em;
+}
+.watch-content{
+    background-color: black;
+    color: white;
+    padding: 3em;
+}
+.watch-content h2{
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+}
+.movie-info{
+    font-weight: bold;
+}
+.movie-info span{
+    padding-right: 1.6em;
+}
+.movie-story{
+    margin: 1em 0;
+}
+.watch-content a{
+    font-weight: bold;
+    color: white;
+}
+@media screen and (min-width:810px){
+    .watch-card{
+        display: flex;
+    }
+    .watch-content{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .img-right{
+        order:2;
+    }
+}
+/*Download section*/
+.download-card{
+    margin-bottom: 1em;
+}
+.download-content{
+    background-color: white;
+}
+.download-content a{
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+.download-content a i{
+    font-size: 2.4em;
+}
+.download-info{
+    padding: 1em 2em;
+}
+.download-info h4{
+    margin: 0;
+}
+.download-info p{
+    margin: 0;
+    font-size: 1em;
+}
+.download-cast img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.download-rating{
+    background-color: yellow;
+    color: black;
+    padding: 1em 2em;
+    font-size: 1em;
+}
+.download-rating .rate{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: -0.25em;
+}
+.download-content{
+    display: flex;
+    flex-flow: column;
+}
+.download-content a,.download-rating{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+}
+.download-genre,.download-cast{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.download-info h4{
+    flex-basis: 20%;
+}
+.download-genre{
+    margin-bottom: 10px;
+}
+@media screen and (min-width:810px){
+    .download-content{
+        display: flex;
+        flex-flow: row;
+    }
+    .download-content a,.download-rating{
+        flex-grow: 1;
+    }
+    .download-info{
+        flex-grow: 2;
+    }
+}
+/*Gallery section*/
+.gallery-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-img{
+    height: 250px;
+    flex-grow: 1;
+    margin:0 0 8px 8px;
+}
+.gallery-img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Sidebar section*/
+.sidebar-right{
+    padding: 2em;
+    color: black;
+}
+.widget{
+    background-color: white;
+    margin-bottom: 2em;
+}
+.widget-content{
+    padding: 1em 2em;
+}
+.sidebar-menu ul{
+    list-style-type: none;
+    padding-left: 1em;
+}
+.sidebar-menu a{
+    display: block;
+    padding-bottom: 1em;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (min-width: 810px) and (max-width:1120px){
+    .sidebar-right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .widget{
+        flex-basis: 49%;
+    }
+}
+
