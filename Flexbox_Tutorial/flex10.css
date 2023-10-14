@@ -1,0 +1,39 @@
+/*here ul is parent tag so in CSS flex ul will be termed as flex container element*/
+ul{
+    background-color: lightpink;
+    padding: 20px;
+    display: flex;
+    
+}
+/*here li is child tag so in CSS flex li will be termed as flex item or children element*/
+li{
+    list-style: none;
+    background-color: darkturquoise;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+}
+/*flex-grow property will grow relative to the rest of flex items
+li:nth-child(1){
+    flex-grow: 1;
+}
+li:nth-child(2){
+    flex-grow: 2;
+}
+*/
+/*flex-shrink property will shrink relative to the rest of flex items. default value is 1 means 
+it remains on
+li:nth-child(2){
+    flex-shrink: 0;
+}
+*/
+/*flex-basis property will work as width property in flex. it'll specify initial length of flex 
+item. default value is auto
+li:nth-child(2){
+    flex-basis: 21rem;
+}
+*/
+/*flex-shorthand: flex-grow flex-shrink flex-basis*/
+li:nth-child(2){
+    flex: 1 0 21rem;
+}

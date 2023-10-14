@@ -1,0 +1,22 @@
+body{/*This part will make all websites responsive*/
+    display: flex;
+}
+/*
+Flexbox is a web layout approach 
+*/
+/*here ul is parent tag so in CSS flex ul will be termed as flex container element*/
+ul{
+    background-color: lightsalmon;
+    padding: 20px;
+    /*Flex container property*/
+    display: flex;
+}
+/*here li is child tag so in CSS flex li will be termed as flex item or children element*/
+li{
+    list-style: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 10px;
+    margin: 20px;
+    width: 100px;
+}

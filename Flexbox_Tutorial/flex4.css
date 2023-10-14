@@ -1,0 +1,36 @@
+/*here ul is parent tag so in CSS flex ul will be termed as flex container element*/
+ul{
+    background-color: lightpink;
+    padding: 20px;
+
+    /*Flex container property*/
+    display: flex;
+    
+    /*
+    Flex direction property:- by default it is in row
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    */
+    
+    
+    /*
+    to make responsive all the list items:- flex-wrap property is used
+    by default flex-wrap:nowrap
+    flex-wrap: wrap;
+    */
+    flex-wrap: wrap-reverse;
+    
+}
+/*here li is child tag so in CSS flex li will be termed as flex item or children element*/
+li{
+    list-style: none;
+    background-color: darkturquoise;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+}

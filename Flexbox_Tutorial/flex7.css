@@ -1,0 +1,35 @@
+/*here ul is parent tag so in CSS flex ul will be termed as flex container element*/
+ul{
+    background-color: lightpink;
+    padding: 20px;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    /*align-items property
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    */
+    align-items: baseline;/*to understand this n-th child property should be there*/
+}
+/*here li is child tag so in CSS flex li will be termed as flex item or children element*/
+li{
+    list-style: none;
+    background-color: darkturquoise;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+li:nth-child(1){
+    padding: 5px;
+}
+li:nth-child(3){
+    padding: 5px;
+}
+li:nth-child(5){
+    padding: 5px;
+}

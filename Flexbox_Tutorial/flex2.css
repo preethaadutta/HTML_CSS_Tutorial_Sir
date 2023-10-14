@@ -1,0 +1,16 @@
+/*here body is parent tag so in CSS flex body will be termed as flex container element*/
+body{
+    display: flex;
+}
+/*here section is child tag so in CSS flex section will be termed as flex item or children element*/
+section{
+    width:20rem;
+    padding: 1.5rem;
+    background-color: lightblue;
+    color: white;
+    margin: 1rem;
+}
+div.content{
+    background-color: rgb(58, 47, 172);
+    padding: 1rem;
+}
